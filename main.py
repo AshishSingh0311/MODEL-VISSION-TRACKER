@@ -11,6 +11,7 @@ from backup_sync import BackupSyncManager
 from performance_monitor import PerformanceMonitor
 from dashboard import render_dashboard
 from database import init_db  # Import the database initialization function
+from advanced_failover import advanced_failover_manager
 
 # Ensure necessary directories exist
 os.makedirs("logs", exist_ok=True)
@@ -47,10 +48,14 @@ def start_services():
     health_thread = health_checker.start_monitoring()
     logger.info("Health checker started")
     
-    # Start failover manager
+    # Start the primary failover manager (keeping for backward compatibility)
     failover_manager = FailoverManager()
     failover_thread = failover_manager.start_monitoring()
-    logger.info("Failover manager started")
+    logger.info("Basic failover manager started")
+    
+    # Start advanced failover monitoring (using ML-based decision logic)
+    advanced_thread = advanced_failover_manager.start_monitoring(interval=15)
+    logger.info("Advanced failover manager started")
     
     # Start backup sync manager
     backup_manager = BackupSyncManager()
@@ -91,7 +96,7 @@ def start_services():
                 f.write(f"This is GCP Bucket storage file {i}")
     
     logger.info("All services started successfully")
-    return health_thread, failover_thread, backup_thread, performance_thread
+    return health_thread, failover_thread, advanced_thread, backup_thread, performance_thread
 
 def main():
     """Main entry point for the application"""
