@@ -63,7 +63,8 @@ def render_dashboard():
         # Navigation
         page = st.radio(
             "Navigation",
-            ["Overview", "Health Monitoring", "Failover Management", "Disaster Recovery", "Storage & Backup", "Performance Analytics", "Cost Analysis", "Configuration"]
+            ["Overview", "Health Monitoring", "Failover Management", "Disaster Recovery", "Storage & Backup", 
+             "Performance Analytics", "Cost Analysis", "LogiXpress Case Study", "Configuration"]
         )
         
         st.markdown("---")
@@ -218,6 +219,9 @@ def render_dashboard():
         render_performance_analytics_page()
     elif page == "Cost Analysis":
         render_cost_analysis_page()
+    elif page == "LogiXpress Case Study":
+        from logixpress_integration import render_logixpress_dashboard
+        render_logixpress_dashboard()
     elif page == "Configuration":
         render_configuration_page()
 

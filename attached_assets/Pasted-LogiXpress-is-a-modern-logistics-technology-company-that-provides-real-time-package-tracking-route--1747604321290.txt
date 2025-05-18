@@ -1,0 +1,50 @@
+LogiXpress is a modern logistics technology company that provides real-time package tracking, route optimization, warehouse coordination, and customer notification systems for courier and supply chain businesses. Headquartered in Mumbai with operations across India, Southeast Asia, and Europe, LogiXpress powers time-sensitive logistics for e-commerce platforms, pharmaceuticals, and retail chains.
+
+To ensure uninterrupted, 24/7 service, LogiXpress hosts its core logistics applications across a multi-cloud infrastructure, using Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). These platforms redundantly support services like delivery tracking APIs, route engines, customer alerts, and logistics dashboards.
+
+🔄 Cloud Failover and Business Continuity
+LogiXpress uses a custom-built Multi-Cloud Disaster Recovery and Business Continuity Framework that automatically:
+
+Monitors health and performance of AWS, Azure, and GCP
+
+Detects outages or degraded service in real time
+
+Instantly shifts the business application from the affected cloud to the next healthiest one
+
+Logs all failover events with timestamps and recovery details
+
+Displays real-time system status on a Streamlit dashboard
+
+Example Scenario:
+
+If AWS experiences an EC2 failure or network outage, the system logs the incident, reroutes all traffic to Azure, and restores the latest application state. The dashboard immediately reflects this shift, showing AWS as "DOWN" and Azure as the "ACTIVE PROVIDER."
+
+📊 Live Dashboard Snapshot
+Real-time indicators:
+
+✅ AWS – UP (Green)
+
+⚠️ Azure – Active (Blue Highlighted)
+
+❌ GCP – DOWN (Red)
+
+
+Graphs include:
+
+Line chart showing cloud availability every minute
+
+Bar graph showing failover time per scenario
+
+Pie chart showing uptime percentage per cloud over 24 hours
+
+💡 Cloud Provider Recommendations by Scenario
+Scenario	Recommended Cloud	Reason
+Compute Instance Failure	Azure	Fast VM restart and better zone-level failover
+Storage Outage	GCP	High durability and smart replication in Cloud Storage
+Network Latency / Congestion	AWS	Global network infrastructure with fast edge routing
+Cost-Optimized Backup Strategy	GCP	Lowest per-GB storage costs with automatic tiering
+Multi-cloud Coordination	Azure	Strong API management and seamless cross-region orchestration
+
+🔐 Conclusion
+LogiXpress showcases how multi-cloud automation and intelligent failover strategies protect mission-critical logistics operations from unexpected downtime. With over 10,000 deliveries processed every minute and 200+ clients worldwide, the ability to shift cloud platforms instantly ensures operational resilience, customer trust, and industry leadership.
+
