@@ -12,6 +12,8 @@ from config import (
     FAILOVER_LOG_FILE,
     HEALTH_STATUS_FILE
 )
+from health_check import get_current_health_status
+from db_manager import db_manager
 
 # Setup logging
 logging.basicConfig(
@@ -62,11 +64,11 @@ class FailoverManager:
     def check_and_failover(self):
         """Check health status and initiate failover if needed"""
         try:
-            if os.path.exists(HEALTH_STATUS_FILE):
-                with open(HEALTH_STATUS_FILE, 'r') as f:
-                    health_status = json.load(f)
-            else:
-                logger.error("Health status file not found")
+            # Get health status using the function that checks both DB and file
+            health_status = get_current_health_status()
+            
+            if not health_status:
+                logger.error("Health status not available")
                 return False
                 
             # Get current active provider
@@ -105,8 +107,20 @@ class FailoverManager:
                 self.active_provider = next_provider
                 self._save_active_provider(next_provider)
                 
+                # Get failure reason from health status if available
+                reason = None
+                if failed_provider in health_status:
+                    provider_status = health_status[failed_provider]
+                    if 'error' in provider_status:
+                        reason = provider_status['error']
+                    elif 'status_code' in provider_status:
+                        reason = f"Status code: {provider_status['status_code']}"
+                
+                if not reason:
+                    reason = "Provider unavailable"
+                
                 # Log the failover event
-                self._log_failover_event(failed_provider, next_provider)
+                self._log_failover_event(failed_provider, next_provider, reason)
                 
                 return True
             
@@ -117,23 +131,34 @@ class FailoverManager:
         logger.error(f"Failed to find a healthy provider for failover from {failed_provider}")
         return False
     
-    def _log_failover_event(self, from_provider, to_provider):
+    def _log_failover_event(self, from_provider, to_provider, reason=None, is_manual=False):
         """Log a failover event"""
         event = {
             'timestamp': datetime.now().isoformat(),
             'event': 'failover',
             'from_provider': from_provider,
-            'to_provider': to_provider
+            'to_provider': to_provider,
+            'reason': reason if reason else 'Not specified',
+            'is_manual': is_manual
         }
         
         logger.info(f"Failover event: {from_provider} -> {to_provider}")
         
-        # Log event to failover log file
+        # Log event to database
+        db_manager.record_failover_event(
+            from_provider=from_provider,
+            to_provider=to_provider,
+            reason=reason,
+            is_manual=is_manual,
+            triggered_by='system' if not is_manual else 'user'
+        )
+        
+        # Also log event to failover log file as backup
         try:
             with open(FAILOVER_LOG_FILE, 'a') as f:
                 f.write(json.dumps(event) + '\n')
         except Exception as e:
-            logger.error(f"Failed to log failover event: {str(e)}")
+            logger.error(f"Failed to log failover event to file: {str(e)}")
     
     def run_failover_check_thread(self, interval=10):
         """Run failover checks in a loop at specified intervals"""
@@ -152,7 +177,7 @@ class FailoverManager:
         logger.info(f"Failover monitoring started in background thread (interval: {interval}s)")
         return failover_thread
     
-    def manual_failover(self, to_provider):
+    def manual_failover(self, to_provider, reason="Manual failover"):
         """Manually trigger failover to specified provider"""
         current_provider = self._load_active_provider()
         
@@ -167,9 +192,13 @@ class FailoverManager:
         self._save_active_provider(to_provider)
         
         # Log the manual failover event
-        self._log_failover_event(current_provider, to_provider)
+        self._log_failover_event(current_provider, to_provider, reason, is_manual=True)
         
         return True
+    
+    def get_recent_failover_events(self, limit=10):
+        """Get recent failover events from database"""
+        return db_manager.get_recent_failover_events(limit)
 
 def get_active_provider():
     """Get the current active provider"""

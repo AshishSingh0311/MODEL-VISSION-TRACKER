@@ -8,6 +8,7 @@ from datetime import datetime
 from pathlib import Path
 
 from config import CLOUD_ENDPOINTS, HEALTH_CHECK_INTERVAL, HEALTH_STATUS_FILE
+from db_manager import db_manager
 
 # Setup logging
 logging.basicConfig(
@@ -45,29 +46,54 @@ class HealthChecker:
                 
                 # Update status based on response
                 if response.status_code == 200:
-                    self.status[provider] = {
+                    status_info = {
                         "status": True, 
                         "last_checked": datetime.now().isoformat(),
                         "response_time": response.elapsed.total_seconds()
                     }
+                    self.status[provider] = status_info
                     logger.info(f"{provider.upper()} health check: OK")
+                    
+                    # Record health check in database
+                    db_manager.record_health_check(
+                        provider_name=provider,
+                        status=True,
+                        response_time=response.elapsed.total_seconds()
+                    )
                 else:
-                    self.status[provider] = {
+                    status_info = {
                         "status": False,
                         "last_checked": datetime.now().isoformat(),
                         "response_time": response.elapsed.total_seconds(),
                         "status_code": response.status_code
                     }
+                    self.status[provider] = status_info
                     logger.warning(f"{provider.upper()} health check failed with status code: {response.status_code}")
+                    
+                    # Record health check in database
+                    db_manager.record_health_check(
+                        provider_name=provider,
+                        status=False,
+                        response_time=response.elapsed.total_seconds(),
+                        status_code=response.status_code
+                    )
             
             except requests.exceptions.RequestException as e:
                 # Handle request exceptions (timeout, connection error, etc.)
-                self.status[provider] = {
+                status_info = {
                     "status": False,
                     "last_checked": datetime.now().isoformat(),
                     "error": str(e)
                 }
+                self.status[provider] = status_info
                 logger.error(f"{provider.upper()} health check error: {str(e)}")
+                
+                # Record health check in database
+                db_manager.record_health_check(
+                    provider_name=provider,
+                    status=False,
+                    error_message=str(e)
+                )
         
         # Save status to file
         self._save_status()
@@ -94,13 +120,19 @@ class HealthChecker:
         return health_thread
 
 def get_current_health_status():
-    """Get the current health status from the file"""
+    """Get the current health status"""
     try:
+        # Try to get health status from database first
+        db_status = db_manager.get_health_status()
+        if db_status:
+            return db_status
+        
+        # Fall back to file if database fails
         if os.path.exists(HEALTH_STATUS_FILE):
             with open(HEALTH_STATUS_FILE, 'r') as f:
                 return json.load(f)
-        else:
-            return {}
+        
+        return {}
     except Exception as e:
         logger.error(f"Failed to read health status: {str(e)}")
         return {}

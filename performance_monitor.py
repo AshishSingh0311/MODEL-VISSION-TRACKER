@@ -141,8 +141,12 @@ class PerformanceMonitor:
                 
                 # Update performance data
                 performance_data[provider] = metrics
+                
+                # Store in database
+                from db_manager import db_manager
+                db_manager.record_performance_metrics(provider, metrics)
             
-            # Save updated performance data
+            # Save updated performance data to file as backup
             with open(PERFORMANCE_DATA_FILE, 'w') as f:
                 json.dump(performance_data, f)
                 
