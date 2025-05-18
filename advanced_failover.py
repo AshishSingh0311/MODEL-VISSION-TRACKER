@@ -518,6 +518,17 @@ class AdvancedFailoverManager:
                 return False
         
         return False
+        
+    def get_recent_failover_events(self, limit=10):
+        """Get recent failover events from database"""
+        try:
+            # Use the database manager to get recent events
+            from db_manager import db_manager
+            recent_events = db_manager.get_recent_failover_events(limit=limit)
+            return recent_events
+        except Exception as e:
+            logger.error(f"Error getting recent failover events: {str(e)}")
+            return []
 
 # Get active provider function (kept for compatibility)
 def get_active_provider():

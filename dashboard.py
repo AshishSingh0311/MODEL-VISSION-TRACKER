@@ -8,6 +8,7 @@ import random
 
 from health_check import get_current_health_status
 from failover_manager import get_active_provider, FailoverManager
+from advanced_failover import advanced_failover_manager
 from backup_sync import BackupSyncManager
 from performance_monitor import (
     PerformanceMonitor, 
@@ -18,6 +19,7 @@ from performance_monitor import (
     calculate_availability_percentage,
     get_total_cost_by_provider
 )
+from disaster_recovery_dashboard import render_disaster_recovery_dashboard
 from metrics_table import get_formatted_metrics_table
 from graph_renderer import (
     create_performance_bar_chart,
@@ -61,7 +63,7 @@ def render_dashboard():
         # Navigation
         page = st.radio(
             "Navigation",
-            ["Overview", "Health Monitoring", "Failover Management", "Storage & Backup", "Performance Analytics", "Cost Analysis", "Configuration"]
+            ["Overview", "Health Monitoring", "Failover Management", "Disaster Recovery", "Storage & Backup", "Performance Analytics", "Cost Analysis", "Configuration"]
         )
         
         st.markdown("---")
@@ -208,6 +210,8 @@ def render_dashboard():
         render_health_monitoring_page()
     elif page == "Failover Management":
         render_failover_management_page()
+    elif page == "Disaster Recovery":
+        render_disaster_recovery_dashboard()
     elif page == "Storage & Backup":
         render_storage_backup_page()
     elif page == "Performance Analytics":
