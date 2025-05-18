@@ -1,0 +1,82 @@
+I want to build and deploy a simplified Multi-Cloud Disaster Recovery & Business Continuity Framework using Python in Replit. The system should monitor the health of cloud providers (AWS, Azure, GCP), trigger automated failover if any cloud goes down, simulate backup syncs, and display everything on a Streamlit dashboard. Please generate the following:
+
+🔧 Required Features (Replit Compatible):
+✅ 1. Health Check Module
+Use Python's requests library to ping 3 mock endpoints (AWS, Azure, GCP).
+
+Store the health status in a JSON file.
+
+Run this check every 30 seconds using schedule or threading.
+
+✅ 2. Failover Logic
+Use a Python script to:
+
+Read the health status.
+
+If the current provider is down, switch to the next available one (AWS > Azure > GCP).
+
+Save the active provider in a file or global variable.
+
+Log all failover events in a logs/failover.log file.
+
+✅ 3. Backup Simulation
+Simulate backups using local folders (no actual cloud SDKs).
+
+Create 3 folders: /mock_cloud/aws_s3/, /mock_cloud/azure_blob/, /mock_cloud/gcp_bucket/.
+
+Write a sync script that copies files from one folder to the others every 6 hours.
+
+✅ 4. Streamlit Dashboard
+Real-time cloud health indicator (Green/Red status)
+
+Active cloud provider label
+
+Data table showing downtime, RTO, RPO, Failover Time, and Cost
+
+Interactive Plotly bar and line charts based on performance metrics
+
+Button to manually trigger failover
+
+✅ 5. Table from Research Paper
+Load this table in a pandas dataframe:
+
+Scenario	Downtime (s)	RTO (s)	RPO (min)	Failover Time (s)	Cost ($)
+AWS Instance Failure	120	45	5	30	20
+Azure Storage Failure	150	60	6	35	25
+GCP Network Disruption	180	90	7	50	30
+Cross-Cloud Failover	90	40	4	25	22
+Multi-Cloud Outage	110	50	5	40	28
+
+🧱 Folder Structure
+lua
+Copy
+Edit
+/multi_cloud_dr_framework
+├── health_check.py
+├── failover_manager.py
+├── backup_sync.py
+├── dashboard.py
+├── metrics_table.py
+├── graph_renderer.py
+├── logs/
+│   └── failover.log
+├── mock_cloud_storage/
+│   ├── aws_s3/
+│   ├── azure_blob/
+│   └── gcp_bucket/
+├── config.env
+└── requirements.txt
+📦 Python Packages to Install (Add to replit.nix or run in Shell)
+bash
+Copy
+Edit
+pip install streamlit pandas plotly requests schedule python-dotenv
+🎯 Final Goals in Replit:
+Start the health check and failover scripts in background threads
+
+Use Streamlit to serve a live dashboard at the public Replit URL
+
+Store logs and metrics inside /logs for debugging
+
+Support manual file uploads to /mock_cloud/aws_s3 for backup testing
+
