@@ -92,7 +92,7 @@ class FailoverManager:
     def _perform_failover(self, failed_provider, health_status):
         """Perform failover to next available provider"""
         # Determine next provider in failover order
-        next_provider = FAILOVER_ORDER.get(failed_provider)
+        next_provider = FAILOVER_ORDER.get(failed_provider, DEFAULT_PROVIDER)
         
         # Find a healthy provider
         attempts = 0
@@ -125,7 +125,7 @@ class FailoverManager:
                 return True
             
             # Try the next provider in the chain
-            next_provider = FAILOVER_ORDER.get(next_provider)
+            next_provider = FAILOVER_ORDER.get(next_provider, DEFAULT_PROVIDER)
             attempts += 1
         
         logger.error(f"Failed to find a healthy provider for failover from {failed_provider}")

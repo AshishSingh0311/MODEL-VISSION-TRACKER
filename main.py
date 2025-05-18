@@ -10,6 +10,7 @@ from failover_manager import FailoverManager
 from backup_sync import BackupSyncManager
 from performance_monitor import PerformanceMonitor
 from dashboard import render_dashboard
+from database import init_db  # Import the database initialization function
 
 # Ensure necessary directories exist
 os.makedirs("logs", exist_ok=True)
@@ -32,6 +33,14 @@ logger = logging.getLogger('main')
 def start_services():
     """Start all background services"""
     logger.info("Starting Multi-Cloud Disaster Recovery Framework services...")
+    
+    # Initialize database first
+    try:
+        init_db()
+        logger.info("Database initialized successfully")
+    except Exception as e:
+        logger.error(f"Error initializing database: {str(e)}")
+        logger.warning("Continuing with file-based storage as fallback")
     
     # Start health checking service
     health_checker = HealthChecker()

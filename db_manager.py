@@ -373,7 +373,7 @@ class DatabaseManager:
         try:
             # Calculate time period
             end_date = datetime.now()
-            start_date = end_date - datetime.timedelta(days=days)
+            start_date = end_date - timedelta(days=days)
             
             # Query cost records
             query = session.query(CostRecord) \
