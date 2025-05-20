@@ -1,0 +1,711 @@
+2025-05-18 20:18:14,909 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:18:14,911 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:18:14,912 - main - INFO - Health checker started
+2025-05-18 20:18:14,913 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:18:14,915 - main - INFO - Failover manager started
+2025-05-18 20:18:14,915 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:14,917 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:14,918 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:14,918 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:18:14,923 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:18:14,924 - main - INFO - Backup sync manager started
+2025-05-18 20:18:14,924 - main - INFO - All services started successfully
+2025-05-18 20:18:14,953 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:18:14,954 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:18:15,254 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:15,407 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:15,408 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:15,410 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:15,473 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:15,781 - health_check - INFO - GCP health check: OK
+2025-05-18 20:18:19,152 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:18:19,162 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:18:19,165 - main - INFO - Health checker started
+2025-05-18 20:18:19,190 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:18:19,190 - main - INFO - Failover manager started
+2025-05-18 20:18:19,190 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:19,191 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:19,191 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:19,198 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:18:19,200 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:18:19,215 - main - INFO - Backup sync manager started
+2025-05-18 20:18:19,221 - main - INFO - All services started successfully
+2025-05-18 20:18:19,225 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:18:19,234 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:19,234 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:19,235 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:19,270 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:18:19,575 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:19,911 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:20,118 - health_check - INFO - GCP health check: OK
+2025-05-18 20:18:37,655 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:18:37,657 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:18:37,658 - main - INFO - Health checker started
+2025-05-18 20:18:37,659 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:18:37,659 - main - INFO - Failover manager started
+2025-05-18 20:18:37,661 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:37,664 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:37,664 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:37,665 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:18:37,665 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:18:37,667 - main - INFO - Backup sync manager started
+2025-05-18 20:18:37,667 - main - INFO - All services started successfully
+2025-05-18 20:18:37,668 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:18:37,669 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:18:37,682 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:37,682 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:37,682 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:37,937 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:38,144 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:38,355 - health_check - INFO - GCP health check: OK
+2025-05-18 20:18:45,996 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:46,207 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:46,429 - health_check - INFO - GCP health check: OK
+2025-05-18 20:18:50,331 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:50,541 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:50,690 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:18:50,692 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:18:50,693 - main - INFO - Health checker started
+2025-05-18 20:18:50,695 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:18:50,695 - main - INFO - Failover manager started
+2025-05-18 20:18:50,696 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:50,696 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:50,696 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:50,698 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:18:50,698 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:18:50,700 - main - INFO - Backup sync manager started
+2025-05-18 20:18:50,700 - main - INFO - All services started successfully
+2025-05-18 20:18:50,718 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:50,720 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:50,720 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:18:50,721 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:50,731 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:18:50,752 - health_check - INFO - GCP health check: OK
+2025-05-18 20:18:50,923 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:51,206 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:51,417 - health_check - INFO - GCP health check: OK
+2025-05-18 20:18:55,375 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:18:55,377 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:18:55,377 - main - INFO - Health checker started
+2025-05-18 20:18:55,378 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:18:55,379 - main - INFO - Failover manager started
+2025-05-18 20:18:55,379 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:55,379 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:55,380 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:55,380 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:18:55,381 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:18:55,382 - main - INFO - Backup sync manager started
+2025-05-18 20:18:55,383 - main - INFO - All services started successfully
+2025-05-18 20:18:55,394 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:55,395 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:18:55,396 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:55,398 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:55,402 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:18:55,631 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:55,898 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:56,106 - health_check - INFO - GCP health check: OK
+2025-05-18 20:18:57,016 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:18:57,017 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:18:57,018 - main - INFO - Health checker started
+2025-05-18 20:18:57,019 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:18:57,019 - main - INFO - Failover manager started
+2025-05-18 20:18:57,020 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:57,020 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:57,020 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:57,020 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:18:57,020 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:18:57,021 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:18:57,021 - main - INFO - Backup sync manager started
+2025-05-18 20:18:57,028 - main - INFO - All services started successfully
+2025-05-18 20:18:57,031 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:18:57,049 - failover_manager - INFO - Manual failover initiated from aws to azure
+2025-05-18 20:18:57,053 - failover_manager - INFO - Failover event: aws -> azure
+2025-05-18 20:18:57,225 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:57,434 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:57,642 - health_check - INFO - GCP health check: OK
+2025-05-18 20:18:58,111 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:18:58,114 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:18:58,115 - main - INFO - Health checker started
+2025-05-18 20:18:58,118 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:18:58,119 - main - INFO - Failover manager started
+2025-05-18 20:18:58,120 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:58,120 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:58,121 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:58,121 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:18:58,122 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:18:58,122 - main - INFO - Backup sync manager started
+2025-05-18 20:18:58,124 - main - INFO - All services started successfully
+2025-05-18 20:18:58,124 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:18:58,134 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:18:58,136 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:18:58,137 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:18:58,138 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:18:58,388 - health_check - INFO - AWS health check: OK
+2025-05-18 20:18:58,598 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:18:58,807 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:08,567 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:08,773 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:08,984 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:16,636 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:16,846 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:17,052 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:20,962 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:21,169 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:21,386 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:21,626 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:21,851 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:22,065 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:25,004 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:19:25,006 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:19:25,007 - main - INFO - Health checker started
+2025-05-18 20:19:25,008 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:19:25,009 - main - INFO - Failover manager started
+2025-05-18 20:19:25,009 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:19:25,010 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:19:25,010 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:19:25,011 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:19:25,011 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:19:25,012 - main - INFO - Backup sync manager started
+2025-05-18 20:19:25,012 - main - INFO - All services started successfully
+2025-05-18 20:19:25,016 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:19:25,025 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:19:25,026 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:19:25,027 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:19:25,028 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:19:25,245 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:25,511 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:25,761 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:26,318 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:26,523 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:26,727 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:27,851 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:28,058 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:28,265 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:29,015 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:29,223 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:29,430 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:39,199 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:39,406 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:39,620 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:47,259 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:47,465 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:47,675 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:51,608 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:51,838 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:52,050 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:52,277 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:52,489 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:52,699 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:55,971 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:56,178 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:56,387 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:56,949 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:57,170 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:57,379 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:58,472 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:58,677 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:19:58,889 - health_check - INFO - GCP health check: OK
+2025-05-18 20:19:59,641 - health_check - INFO - AWS health check: OK
+2025-05-18 20:19:59,846 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:00,051 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:09,830 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:10,038 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:10,247 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:17,887 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:18,094 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:18,304 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:22,258 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:22,462 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:22,679 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:22,915 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:23,132 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:23,342 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:26,595 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:26,812 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:27,023 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:27,586 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:27,793 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:28,002 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:29,123 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:29,328 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:29,533 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:30,266 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:30,473 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:30,677 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:40,469 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:40,681 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:40,896 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:48,513 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:48,721 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:48,936 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:52,887 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:53,108 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:53,320 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:53,552 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:53,764 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:53,972 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:57,232 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:57,443 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:57,652 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:58,209 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:58,417 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:20:58,623 - health_check - INFO - GCP health check: OK
+2025-05-18 20:20:59,742 - health_check - INFO - AWS health check: OK
+2025-05-18 20:20:59,954 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:00,167 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:00,889 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:01,099 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:01,311 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:11,112 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:11,323 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:11,530 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:19,162 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:19,372 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:19,580 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:23,531 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:23,738 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:23,946 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:24,196 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:24,406 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:24,614 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:27,858 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:28,067 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:28,311 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:28,829 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:29,045 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:29,281 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:30,382 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:30,590 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:30,800 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:31,526 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:31,742 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:31,946 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:41,743 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:41,954 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:42,165 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:49,792 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:50,043 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:50,256 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:54,156 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:54,362 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:54,573 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:54,820 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:55,035 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:55,242 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:58,521 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:58,727 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:58,946 - health_check - INFO - GCP health check: OK
+2025-05-18 20:21:59,494 - health_check - INFO - AWS health check: OK
+2025-05-18 20:21:59,699 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:21:59,913 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:01,014 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:01,222 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:01,436 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:02,179 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:02,384 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:02,593 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:12,381 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:12,610 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:12,832 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:20,469 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:20,689 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:20,893 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:24,797 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:25,003 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:25,210 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:25,464 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:25,680 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:25,894 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:26,485 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:22:26,486 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:22:26,487 - main - INFO - Health checker started
+2025-05-18 20:22:26,488 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:22:26,489 - main - INFO - Failover manager started
+2025-05-18 20:22:26,490 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:22:26,491 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:22:26,491 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:22:26,492 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:22:26,492 - backup_sync - INFO - Backup sync started in background thread (interval: 21600s)
+2025-05-18 20:22:26,493 - main - INFO - Backup sync manager started
+2025-05-18 20:22:26,494 - main - INFO - All services started successfully
+2025-05-18 20:22:26,498 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:22:26,505 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:22:26,506 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:22:26,507 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:22:26,508 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 21600 seconds.
+2025-05-18 20:22:26,729 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:27,007 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:27,217 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:29,156 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:29,363 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:29,571 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:30,123 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:30,336 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:30,548 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:31,644 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:31,859 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:32,079 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:32,805 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:33,014 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:33,218 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:43,041 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:43,246 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:43,456 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:51,103 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:51,314 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:51,520 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:55,422 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:55,630 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:55,840 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:56,097 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:56,303 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:56,513 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:57,424 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:57,636 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:22:57,848 - health_check - INFO - GCP health check: OK
+2025-05-18 20:22:59,783 - health_check - INFO - AWS health check: OK
+2025-05-18 20:22:59,995 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:00,214 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:00,764 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:00,977 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:01,188 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:02,300 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:02,512 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:02,727 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:03,430 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:03,639 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:03,845 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:13,669 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:13,881 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:14,098 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:21,730 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:21,940 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:22,147 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:26,050 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:26,258 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:26,467 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:26,722 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:26,943 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:27,146 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:28,053 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:28,273 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:28,493 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:30,424 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:30,633 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:30,841 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:31,396 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:31,605 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:31,833 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:32,934 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:33,146 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:33,354 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:34,058 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:34,268 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:34,474 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:44,311 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:44,516 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:44,723 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:52,362 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:52,565 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:52,772 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:56,682 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:56,892 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:57,101 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:57,365 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:57,576 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:57,795 - health_check - INFO - GCP health check: OK
+2025-05-18 20:23:58,707 - health_check - INFO - AWS health check: OK
+2025-05-18 20:23:58,919 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:23:59,129 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:01,074 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:01,346 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:01,567 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:02,057 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:02,301 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:02,526 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:03,572 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:03,799 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:04,013 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:04,688 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:04,895 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:05,108 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:14,931 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:15,140 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:15,353 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:22,991 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:23,209 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:23,424 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:27,317 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:27,531 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:27,739 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:27,739 - failover_manager - ERROR - Error in check_and_failover: Expecting value: line 1 column 1 (char 0)
+2025-05-18 20:24:28,028 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:28,245 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:28,467 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:29,336 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:29,548 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:29,756 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:31,775 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:31,985 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:32,201 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:32,736 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:32,941 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:33,157 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:34,220 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:34,429 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:34,637 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:35,318 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:35,533 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:35,744 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:45,565 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:45,770 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:45,976 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:53,642 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:53,855 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:54,066 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:57,947 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:58,153 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:58,360 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:58,672 - health_check - INFO - AWS health check: OK
+2025-05-18 20:24:58,882 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:24:59,090 - health_check - INFO - GCP health check: OK
+2025-05-18 20:24:59,963 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:00,181 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:00,400 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:02,410 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:02,619 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:02,833 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:03,377 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:03,586 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:03,792 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:04,847 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:05,074 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:05,281 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:05,955 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:06,164 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:06,372 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:16,188 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:16,394 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:16,607 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:24,284 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:24,492 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:24,719 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:28,592 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:28,801 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:29,044 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:29,297 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:29,506 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:29,719 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:30,624 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:30,831 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:31,058 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:33,049 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:33,263 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:33,477 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:34,004 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:34,213 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:34,433 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:35,497 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:35,705 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:35,914 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:36,587 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:36,798 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:37,007 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:46,816 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:47,031 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:47,242 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:54,937 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:55,143 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:55,355 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:59,254 - health_check - INFO - AWS health check: OK
+2025-05-18 20:25:59,459 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:25:59,671 - health_check - INFO - GCP health check: OK
+2025-05-18 20:25:59,934 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:00,146 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:00,351 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:01,272 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:01,486 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:01,705 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:03,688 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:03,896 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:04,103 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:04,652 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:04,862 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:05,076 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:06,137 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:06,354 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:06,571 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:07,226 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:07,454 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:07,676 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:17,461 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:17,668 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:17,884 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:25,572 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:25,775 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:25,980 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:29,884 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:30,106 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:30,324 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:30,559 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:30,771 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:30,981 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:31,918 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:32,139 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:32,360 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:34,312 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:34,525 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:34,733 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:35,284 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:35,495 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:35,698 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:36,781 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:36,986 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:37,192 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:37,891 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:38,098 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:38,311 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:48,092 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:48,299 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:48,512 - health_check - INFO - GCP health check: OK
+2025-05-18 20:26:56,190 - health_check - INFO - AWS health check: OK
+2025-05-18 20:26:56,397 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:26:56,604 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:00,538 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:00,748 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:00,954 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:01,192 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:01,405 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:01,619 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:02,569 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:02,784 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:02,997 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:04,955 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:05,170 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:05,380 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:05,907 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:06,121 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:06,326 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:07,408 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:07,618 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:07,824 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:08,520 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:08,730 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:08,974 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:18,724 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:18,929 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:19,146 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:26,877 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:27,176 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:27,464 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:31,159 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:31,378 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:31,588 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:31,828 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:32,038 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:32,248 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:33,203 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:33,414 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:33,620 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:35,594 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:35,811 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:36,017 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:36,549 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:36,754 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:36,966 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:38,041 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:38,251 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:38,474 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:39,191 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:39,403 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:39,617 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:49,370 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:49,582 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:49,793 - health_check - INFO - GCP health check: OK
+2025-05-18 20:27:57,673 - health_check - INFO - AWS health check: OK
+2025-05-18 20:27:57,882 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:27:58,090 - health_check - INFO - GCP health check: OK
+2025-05-18 20:28:01,801 - health_check - INFO - AWS health check: OK
+2025-05-18 20:28:02,022 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:28:02,248 - health_check - INFO - GCP health check: OK
+2025-05-18 20:28:02,463 - health_check - INFO - AWS health check: OK
+2025-05-18 20:28:02,681 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:28:02,902 - health_check - INFO - GCP health check: OK
+2025-05-18 20:28:03,829 - health_check - INFO - AWS health check: OK
+2025-05-18 20:28:04,043 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:28:04,253 - health_check - INFO - GCP health check: OK
+2025-05-18 20:28:06,223 - health_check - INFO - AWS health check: OK
+2025-05-18 20:28:06,446 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:28:06,660 - health_check - INFO - GCP health check: OK
+2025-05-18 20:28:07,174 - health_check - INFO - AWS health check: OK
+2025-05-18 20:28:07,382 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:28:07,618 - health_check - INFO - GCP health check: OK
+2025-05-18 20:28:08,683 - health_check - INFO - AWS health check: OK
+2025-05-18 20:28:08,890 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:28:09,094 - health_check - INFO - GCP health check: OK
+2025-05-18 20:28:09,822 - health_check - INFO - AWS health check: OK
+2025-05-18 20:28:10,032 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:28:10,239 - health_check - INFO - GCP health check: OK
+2025-05-18 20:29:58,229 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:29:58,230 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:29:58,230 - main - INFO - Health checker started
+2025-05-18 20:29:58,231 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:29:58,231 - main - INFO - Failover manager started
+2025-05-18 20:29:58,232 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:29:58,232 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:29:58,232 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:29:58,235 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:29:58,235 - backup_sync - INFO - Backup sync started in background thread (interval: 300s)
+2025-05-18 20:29:58,236 - main - INFO - Backup sync manager started
+2025-05-18 20:29:58,236 - performance_monitor - INFO - Initialized performance data file
+2025-05-18 20:29:58,238 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:29:58,240 - performance_monitor - INFO - Initialized availability history file
+2025-05-18 20:29:58,240 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 300 seconds.
+2025-05-18 20:29:58,243 - performance_monitor - INFO - Initialized cost history file
+2025-05-18 20:29:58,244 - performance_monitor - INFO - Initialized network latency file
+2025-05-18 20:29:58,246 - performance_monitor - INFO - Performance monitoring started in background thread (interval: 60s)
+2025-05-18 20:29:58,247 - main - INFO - Performance monitoring started
+2025-05-18 20:29:58,247 - main - INFO - All services started successfully
+2025-05-18 20:29:58,472 - health_check - INFO - AWS health check: OK
+2025-05-18 20:29:58,785 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:29:59,026 - health_check - INFO - GCP health check: OK
+2025-05-18 20:30:05,456 - main - INFO - Starting Multi-Cloud Disaster Recovery Framework services...
+2025-05-18 20:30:05,459 - health_check - INFO - Health monitoring started in background thread
+2025-05-18 20:30:05,460 - main - INFO - Health checker started
+2025-05-18 20:30:05,462 - failover_manager - INFO - Failover monitoring started in background thread (interval: 10s)
+2025-05-18 20:30:05,462 - main - INFO - Failover manager started
+2025-05-18 20:30:05,462 - backup_sync - INFO - Initialized cloud storage directory for aws: /home/runner/workspace/mock_cloud_storage/aws_s3
+2025-05-18 20:30:05,463 - backup_sync - INFO - Initialized cloud storage directory for azure: /home/runner/workspace/mock_cloud_storage/azure_blob
+2025-05-18 20:30:05,463 - backup_sync - INFO - Initialized cloud storage directory for gcp: /home/runner/workspace/mock_cloud_storage/gcp_bucket
+2025-05-18 20:30:05,463 - backup_sync - INFO - Starting sync across all cloud providers
+2025-05-18 20:30:05,464 - backup_sync - INFO - Backup sync started in background thread (interval: 300s)
+2025-05-18 20:30:05,464 - main - INFO - Backup sync manager started
+2025-05-18 20:30:05,465 - performance_monitor - INFO - Performance monitoring started in background thread (interval: 60s)
+2025-05-18 20:30:05,467 - backup_sync - INFO - Sync completed. 0 files synced out of 0 total files.
+2025-05-18 20:30:05,467 - main - INFO - Performance monitoring started
+2025-05-18 20:30:05,469 - main - INFO - All services started successfully
+2025-05-18 20:30:05,487 - backup_sync - INFO - Backup sync completed. Synced 0 of 0 files. Next sync in 300 seconds.
+2025-05-18 20:30:05,730 - health_check - INFO - AWS health check: OK
+2025-05-18 20:30:05,945 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:30:06,151 - health_check - INFO - GCP health check: OK
+2025-05-18 20:30:29,231 - health_check - INFO - AWS health check: OK
+2025-05-18 20:30:29,444 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:30:29,651 - health_check - INFO - GCP health check: OK
+2025-05-18 20:30:36,377 - health_check - INFO - AWS health check: OK
+2025-05-18 20:30:36,585 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:30:36,798 - health_check - INFO - GCP health check: OK
+2025-05-18 20:30:59,859 - health_check - INFO - AWS health check: OK
+2025-05-18 20:31:00,067 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:31:00,281 - health_check - INFO - GCP health check: OK
+2025-05-18 20:31:07,055 - health_check - INFO - AWS health check: OK
+2025-05-18 20:31:07,474 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:31:07,729 - health_check - INFO - GCP health check: OK
+2025-05-18 20:31:30,501 - health_check - INFO - AWS health check: OK
+2025-05-18 20:31:30,711 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:31:30,926 - health_check - INFO - GCP health check: OK
+2025-05-18 20:31:37,934 - health_check - INFO - AWS health check: OK
+2025-05-18 20:31:38,139 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:31:38,349 - health_check - INFO - GCP health check: OK
+2025-05-18 20:32:01,144 - health_check - INFO - AWS health check: OK
+2025-05-18 20:32:01,350 - health_check - INFO - AZURE health check: OK
+2025-05-18 20:32:01,601 - health_check - INFO - GCP health check: OK
